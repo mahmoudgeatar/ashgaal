@@ -1,3 +1,78 @@
+/* import fonts */
+ 
+@font-face{
+    font-family: 'OPENSANS';
+    src:url(../fonts/OPENSANS.TTF);
+   
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face{
+   font-family: 'OPENSANS';
+   src: url(../fonts/OPENSANS-BOLDITALIC.TTF);
+   font-weight: bold;
+   font-style: italic;
+}
+
+@font-face{
+    font-family: 'OPENSANS';
+    src: url(../fonts/OPENSANS-EXTRABOLD.TTF);
+    font-weight: bolder;
+    font-style: normal;  
+}
+
+@font-face{
+    font-family: 'OPENSANS';
+    src: url(../fonts/OPENSANS-EXTRABOLDITALIC.TTF);
+    font-weight: bolder;
+    font-style: italic;  
+}
+
+@font-face{
+    font-family: 'OPENSANS';
+    src: url(../fonts/OPENSANS-ITALIC.TTF);
+    font-weight: normal;
+    font-style: italic;  
+}
+
+@font-face{
+    font-family: 'OPENSANS';
+    src: url(../fonts/OPENSANS-LIGHT.TTF);
+    font-weight: lighter;
+    font-style: normal;  
+}
+
+@font-face{
+    font-family: 'OPENSANS';
+    src: url(../fonts/OPENSANS-SEMIBOLD.TTF);
+
+    font-weight: bold;
+    font-style: normal;  
+}
+
+@font-face{
+    font-family: 'OPENSANS';
+    src: url(../fonts/OPENSANS-SEMIBOLDITALIC.TTF);
+    font-weight: bold;
+    font-style: italic;  
+}
+
+@font-face{
+    font-family: 'OPENSANS';
+    src: url(../fonts/OPENSANS-LIGHTITALIC.TTF);
+    font-weight: lighter;
+    font-style: italic;  
+}
+
+@font-face{
+    font-family: 'OPENSANS';
+    src: url(../fonts/OPENSANS-BOLD.TTF);
+    font-weight: bold;
+    font-style: normal;  
+}
+
 
 *{
     -webkit-box-sizing: border-box;
@@ -5,44 +80,414 @@
     box-sizing: border-box;
   }
 
+  
+body{
+    font-family: 'OPENSANS';
+}
+
+
+  
+hr{
+    background-color: #F2F2F2;
+    margin: 0px;
+}
+
+
 
 /* start upper-bar */
 
-.upper-bar .container{
-    border-bottom: 1px solid #888;
-}
-
-.upper-bar .person li i{
-    background-color: #888;
-    padding: 9px;
-    border-radius: 50%;
-    color: #495057
-}
-.person{
+.upper-bar .person{
     display: flex;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
 }
 
+@media(max-width:767px){
+    .upper-bar .person{
+        justify-content: center;
+    }
+}
+
+.upper-bar .person .name{
+    color: #919090  ;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 13px;
+}
+
+
+.upper-bar .person span i{
+    background-color: #F5F5F5;
+    padding: 8px;
+    border-radius: 50%;
+    color: #B2B1B1;
+    font-size: 12px;
+
+}
 
 /* end upper-bar */
 
 
 /* start nav */
 
-nav{
-  
+.navbar{
+    box-shadow: 0px 8px 10px -10px #deee;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 13.5px;
+    color: #2C2C2C;
+}
 
 /* end nav */
 
 
-/* start main */
+/* start section contact  */
 
-main {
-    box-shadow: 0px -6px 10px -5px #888;
+.contact{
+    padding: 20px 0px 60px;
+}
+
+.contact h6{
+    color:#2C2C2C ;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.contact h6.after::after{
+ margin: 10px 0px 25px;
+ display: block;
+ content: '';
+ width: 30px;
+ height: 2px;
+ background-color: #E2404C;
+}
+
+.contact .required{
+    color: #E2404C;
+    font-size: 13px;
+}
+
+.contact .form-control{
+    border: none;
+    background-color: #F5F5F5;
 }
 
 
-/* end main */
+.contact form label{
+    color: #2C2C2C;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* style of  *  in inputs name */
+.contact span{
+    color: #EB3B3B;
+}
+
+.contact form  .form-group{
+    margin-top: 18px;
+}
+
+
+.contact input {
+    height: 55px;
+    border-radius: 3px;
+}
+
+.contact form .attachment{
+    margin-top: 18px;
+}
+
+.contact form .attachment .content{
+   
+    background-color: #F5F5F5;
+    border-radius: 3px;
+    padding: 8px 5px 8px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px
+}
+
+
+.contact form .attachment .content div{
+    color: #A2A2A2;
+    font-size: 13px;
+}
+
+.contact form .attachment .content button{
+    background-color: #E3E3E3;
+    color: #A2A2A2;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px 20px;
+}
+
+.contact form .attachment .content button:focus{
+    outline: none;
+}
+
+
+.contact form .attachment .file-form{
+ color:   #E2404C;
+ font-size: 13px;
+}
+
+.contact textarea{
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  background-color: #F5F5F5;
+  resize: none;
+}
+
+
+.contact .form-control:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+.contact button{
+    background-color:#E2404C ;
+    border-radius:3px ;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    cursor: pointer;
+}
+
+.contact button:hover{
+    opacity: .9;
+}
+
+/* style location row */
+
+.location h6{
+    color:#2C2C2C ;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.location img{
+    width: 100%;
+}
+
+.location p{
+    color:#2C2C2C ;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.contact .location ul li{
+    color: #2C2C2C;
+    font-size: 14px;
+    padding: 5px 0px;
+}
+
+.contact .location ul li{
+    display: flex;
+    align-items: baseline;
+}
+
+.contact .location ul li i{
+    color: #E2404C;
+    font-size: 15px;
+}
+
+/* end section body */
+
+
+
+
+/* start section our work */
+
+.main-footer{
+    background: transparent linear-gradient(0deg, #FFFFFF 0%, #F7F7F7 100%) 0% 0% no-repeat padding-box;
+}
+
+.ourwork{
+    padding: 60px 0px 10px;
+}
+
+.ourwork .custom-row{
+    padding: 20px;
+}
+
+.ourwork h6{
+    color: #2C2C2C;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.ourwork .custom-row .content{
+    display: flex;
+}
+
+.ourwork .custom-row .content .bar{
+    height: 10rem;
+    width:4px;
+    background-color: #E5E5E5;
+    margin-top: 10px; 
+}
+
+.ourwork .custom-row .content .bar::after{
+    content:"";
+    display: block;
+    width: 4px;
+    height: 30px;
+    border-radius: inherit;
+    background-color: #BFBFBF; 
+}
+
+.ourwork li{
+    padding: 5px 0px;
+}
+
+.ourwork a{
+    color: #2C2C2C;
+    font-size: 14px;
+
+}
+
+/* end section our work */
+
+
+
+
+/* start section contact-footer */
+.contact-footer .custom-row{
+    padding: 20px;
+}
+
+.contact-footer .work ul li{
+    color: #2C2C2C;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    padding: 5px 0px;
+}
+
+.contact-footer p:first-of-type{
+    color: #2C2C2C;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 4px;
+}
+
+.contact-footer ul li{
+    color: #2C2C2C;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    padding: 5px 0px 0px;
+}
+
+.contact-footer .custom-row .subscribe{
+    color: #2C2C2C;
+    font-size: 14px;
+    padding: 5px 0px;
+}
+
+
+.contact-footer .email{
+    background-color:#F5F5F5;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+.contact-footer .email input{
+    background-color: transparent;
+    border: none;
+    padding: 2px;
+    color: #B2B1B1;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.contact-footer .email input:focus{
+    outline: none;
+}
+
+.contact-footer .email input::placeholder{
+    color: #888;
+    padding: 2px;
+}
+
+.contact-footer .email button{
+  background-color: #E2404C;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-footer .email button:hover{
+    opacity: .9;
+}
+
+.contact-footer .email button i{
+    color: white;
+    cursor: pointer;
+}
+
+.contact-footer span:nth-of-type(1){
+    background: #2D4485 0% 0% no-repeat padding-box;
+    padding: 3px 12px;
+    border-radius: 3px;
+}
+
+.contact-footer span:nth-of-type(2){
+    background: #52CBFF 0% 0% no-repeat padding-box;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.contact-footer span:nth-of-type(3){
+    background: #0077B5 0% 0% no-repeat padding-box;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.contact-footer span i{
+    color: white;
+}
+
+
+/* end section contact-footer */
+
+
+
+/* start footer */
+
+
+footer .copyright{
+  letter-spacing: -0.39px;
+  color: #2C2C2C;
+  font-size: 13px;
+}
+
+footer .copyright span{
+    color: #3C4976;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* end footer */
+
+
+
