@@ -3,7 +3,6 @@
 @font-face{
     font-family: 'OPENSANS';
     src:url(../fonts/OPENSANS.TTF);
-   
     font-weight: normal;
     font-style: normal;
 }
@@ -47,7 +46,6 @@
 @font-face{
     font-family: 'OPENSANS';
     src: url(../fonts/OPENSANS-SEMIBOLD.TTF);
-
     font-weight: bold;
     font-style: normal;  
 }
@@ -139,6 +137,27 @@ hr{
     font-style: normal;
     font-size: 13.5px;
     color: #2C2C2C;
+    border-bottom: 1px solid transparent;
+    transition: all .5s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link::after,
+.navbar-light .navbar-nav .nav-link::before
+{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 1px;
+   background-color: #2C2C2C;
+   transition: all .4s ease-in-out;
+   margin: 2px 0px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after,
+.navbar-light .navbar-nav .nav-link:hover::before
+{
+    width: 100%;
+    background-color: #2C2C2C;
 }
 
 /* end nav */
@@ -262,14 +281,38 @@ hr{
     font-weight: bold;
     font-style: normal;
     border: none;
-    color: white;
     padding: 8px 30px;
     cursor: pointer;
+    transition: all 0.5s;
+    width: 100px;
 }
 
-.contact button:hover{
-    opacity: .9;
+
+.contact button span{
+    color: white;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-size: 16px;
 }
+
+.contact button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    font-size: 15px;
+  }
+
+  .contact button:hover span{
+    padding-right: 15px;
+    margin-left: -5px;
+  }
+
+  .contact button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
 /* style location row */
 
@@ -445,22 +488,24 @@ hr{
     cursor: pointer;
 }
 
+.contact-footer span{
+    cursor: pointer;
+    border-radius: 3px;
+}
+
 .contact-footer span:nth-of-type(1){
     background: #2D4485 0% 0% no-repeat padding-box;
-    padding: 3px 12px;
-    border-radius: 3px;
+    padding: 3px 10px;  
 }
 
 .contact-footer span:nth-of-type(2){
     background: #52CBFF 0% 0% no-repeat padding-box;
-    padding: 3px 8px;
-    border-radius: 3px;
+    padding: 3px 10px;
 }
 
 .contact-footer span:nth-of-type(3){
     background: #0077B5 0% 0% no-repeat padding-box;
-    padding: 3px 8px;
-    border-radius: 3px;
+    padding: 3px 10px;
 }
 
 .contact-footer span i{
