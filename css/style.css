@@ -1,73 +1,22 @@
 /* import fonts */
 @font-face{
-    font-family: 'OPENSANS';
-    src:url(../fonts/OPENSANS.TTF);
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face{
-   font-family: 'OPENSANS';
-   src: url(../fonts/OPENSANS-BOLDITALIC.TTF);
-   font-weight: bold;
-   font-style: italic;
-}
-
-@font-face{
-    font-family: 'OPENSANS';
-    src: url(../fonts/OPENSANS-EXTRABOLD.TTF);
-    font-weight: bolder;
-    font-style: normal;  
-}
-
-@font-face{
-    font-family: 'OPENSANS';
-    src: url(../fonts/OPENSANS-EXTRABOLDITALIC.TTF);
-    font-weight: bolder;
-    font-style: italic;  
-}
-
-@font-face{
-    font-family: 'OPENSANS';
+    font-family: 'OPENSANS-Italic';
     src: url(../fonts/OPENSANS-ITALIC.TTF);
-    font-weight: normal;
-    font-style: italic;  
 }
 
 @font-face{
-    font-family: 'OPENSANS';
-    src: url(../fonts/OPENSANS-LIGHT.TTF);
-    font-weight: lighter;
-    font-style: normal;  
+    font-family: 'OPENSANS-Regular';
+    src:url(../fonts/OPENSANS.TTF);
 }
 
 @font-face{
-    font-family: 'OPENSANS';
+    font-family: 'OPENSANS-Semi-Bold';
     src: url(../fonts/OPENSANS-SEMIBOLD.TTF);
-    font-weight: bold;
-    font-style: normal;  
 }
 
 @font-face{
-    font-family: 'OPENSANS';
-    src: url(../fonts/OPENSANS-SEMIBOLDITALIC.TTF);
-    font-weight: bold;
-    font-style: italic;  
-}
-
-@font-face{
-    font-family: 'OPENSANS';
-    src: url(../fonts/OPENSANS-LIGHTITALIC.TTF);
-    font-weight: lighter;
-    font-style: italic;  
-}
-
-@font-face{
-    font-family: 'OPENSANS';
+    font-family: 'OPENSANS-Bold';
     src: url(../fonts/OPENSANS-BOLD.TTF);
-    font-weight: bold;
-    font-style: normal;  
 }
 
 
@@ -77,15 +26,10 @@
     box-sizing: border-box;
   }
 
-body{
-    font-family: 'OPENSANS';
-}
-
 hr{
     background-color: #F2F2F2;
     margin: 0px;
 }
-
 
 
 /* start upper-bar */
@@ -95,16 +39,9 @@ hr{
     align-items: center;
 }
 
-@media(max-width:767px){
-    .upper-bar .person{
-        justify-content: center;
-    }
-}
-
 .upper-bar .person .name{
     color: #919090  ;
-    font-style: normal;
-    font-weight: bold; 
+    font-family: 'OPENSANS-Semi-Bold';
     font-size: 13px;
 }
 
@@ -122,27 +59,29 @@ hr{
 
 
 /* start nav */
-
 .navbar{
     box-shadow: 0px 8px 10px -10px #deee;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    font-weight: bold;
-    font-style: normal;
+    font-family: 'OPENSANS-Semi-Bold';
     font-size: 13.5px;
     color: #2C2C2C;
     border-bottom: 1px solid transparent;
     transition: all .5s ease-in-out;
 }
 
+.navbar-light .navbar-nav .bold{
+    font-family: 'OPENSANS-Bold';
+}
+
 .navbar-light .navbar-nav .nav-link::after,
 .navbar-light .navbar-nav .nav-link::before
 {
-    content: "";
-    display: block;
-    width: 0%;
-    height: 1px;
+   content: "";
+   display: block;
+   width: 0%;
+   height: 1px;
    background-color: #2C2C2C;
    transition: all .4s ease-in-out;
    margin: 2px 0px;
@@ -166,7 +105,7 @@ hr{
 
 .contact h6{
     color:#2C2C2C ;
-    font-weight: bold;
+    font-family: 'OPENSANS-Bold';
     font-size: 18px;
 }
 
@@ -182,6 +121,7 @@ hr{
 .contact .required{
     color: #E2404C;
     font-size: 13px;
+    font-family: 'OPENSANS-Regular';
 }
 
 .contact .form-control{
@@ -192,8 +132,7 @@ hr{
 
 .contact form label{
     color: #2C2C2C;
-    font-weight: bold;
-    font-style: normal;
+    font-family: 'OPENSANS-Bold';
 }
 
 /* style of  *  in inputs name */
@@ -228,13 +167,14 @@ hr{
 .contact form .attachment .content div{
     color: #A2A2A2;
     font-size: 13px;
+    font-family: 'OPENSANS-Regular';
 }
 
 .contact form .attachment .content button{
     background-color: #E3E3E3;
     color: #A2A2A2;
     font-size: 13px;
-    font-weight: normal;
+    font-family: 'OPENSANS-Bold';
     padding: 8px 20px;
 }
 
@@ -242,10 +182,10 @@ hr{
     outline: none;
 }
 
-
 .contact form .attachment .file-form{
  color:   #E2404C;
  font-size: 13px;
+ font-family: 'OPENSANS-Regular';
 }
 
 .contact textarea{
@@ -259,7 +199,6 @@ hr{
   resize: none;
 }
 
-
 .contact .form-control:focus{
     outline: none;
     border: none;
@@ -270,8 +209,7 @@ hr{
     background-color:#E2404C ;
     border-radius:3px ;
     font-size: 14px;
-    font-weight: bold;
-    font-style: normal;
+    font-family: 'OPENSANS-Bold';
     border: none;
     padding: 8px 30px;
     cursor: pointer;
@@ -284,7 +222,8 @@ hr{
     display: inline-block;
     position: relative;
     transition: 0.5s;
-    font-size: 16px;
+    font-size: 14px;
+    font-family: 'OPENSANS-Bold';
 }
 
 .contact button span:after {
@@ -292,7 +231,7 @@ hr{
     position: absolute;
     opacity: 0;
     top: 0;
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .contact button:hover span{
@@ -307,31 +246,33 @@ hr{
 
 /* style location row */
 
-.location h6{
+.contact .location h6{
     color:#2C2C2C ;
-    font-weight: bold;
+    font-family: 'OPENSANS-Bold';
     font-size: 16px;
 }
 
-.location img{
+.contact .location img{
     width: 100%;
 }
 
-.location p{
+.contact .location p{
     color:#2C2C2C ;
-    font-weight: bold;
+    font-family: 'OPENSANS-Bold';
     font-size: 15px;
 }
 
+
 .contact .location ul li{
     color: #2C2C2C;
-    font-size: 14px;
+    font-size: 15px;
+    font-family: 'OPENSANS-Regular';
     padding: 5px 0px;
 }
 
 .contact .location ul li{
     display: flex;
-    align-items: baseline;
+    align-items: baseline; 
 }
 
 .contact .location ul li i{
@@ -345,7 +286,6 @@ hr{
 
 
 /* start section our work */
-
 .main-footer{
     background: transparent linear-gradient(0deg, #FFFFFF 0%, #F7F7F7 100%) 0% 0% no-repeat padding-box;
 }
@@ -360,8 +300,7 @@ hr{
 
 .ourwork h6{
     color: #2C2C2C;
-    font-weight: bold;
-    font-style: normal;
+    font-family: 'OPENSANS-Bold';
     font-size: 15px;
 }
 
@@ -392,6 +331,7 @@ hr{
 .ourwork a{
     color: #2C2C2C;
     font-size: 14px;
+    font-family: 'OPENSANS-Regular';
 }
 
 /* end section our work */
@@ -407,30 +347,33 @@ hr{
 .contact-footer .work ul li{
     color: #2C2C2C;
     font-size: 15px;
-    font-weight: bold;
-    font-style: normal;
+    font-family: 'OPENSANS-Bold';
     padding: 5px 0px;
 }
 
 .contact-footer p:first-of-type{
     color: #2C2C2C;
     font-size: 15px;
-    font-weight: bold;
-    font-style: normal;
+    font-family: 'OPENSANS-Bold';
     margin-bottom: 4px;
 }
 
 .contact-footer ul li{
     color: #2C2C2C;
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'OPENSANS-Regular'; 
     font-size: 14px;
     padding: 5px 0px 0px;
+}
+
+.contact-footer ul li:first-of-type{
+    display: flex;
+    align-items: baseline;
 }
 
 .contact-footer .custom-row .subscribe{
     color: #2C2C2C;
     font-size: 14px;
+    font-family: 'OPENSANS-Regular';
     padding: 5px 0px;
 }
 
@@ -450,7 +393,7 @@ hr{
     padding: 2px;
     color: #B2B1B1;
     font-size: 12px;
-    font-style: italic;
+    font-family: 'OPENSANS-Italic';
 }
 
 .contact-footer .email input:focus{
@@ -502,23 +445,21 @@ hr{
     color: white;
 }
 
-
 /* end section contact-footer */
 
 
 
 /* start footer */
-
-
 footer .copyright{
   letter-spacing: -0.39px;
   color: #2C2C2C;
   font-size: 13px;
+  font-family: 'OPENSANS-Regular'; 
 }
 
 footer .copyright span{
     color: #3C4976;
-    font-weight: bold;
+    font-family: 'OPENSANS-Bold';
     font-size: 13px;
 }
 
