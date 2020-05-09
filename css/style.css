@@ -1,5 +1,4 @@
 /* import fonts */
- 
 @font-face{
     font-family: 'OPENSANS';
     src:url(../fonts/OPENSANS.TTF);
@@ -78,13 +77,10 @@
     box-sizing: border-box;
   }
 
-  
 body{
     font-family: 'OPENSANS';
 }
 
-
-  
 hr{
     background-color: #F2F2F2;
     margin: 0px;
@@ -93,7 +89,6 @@ hr{
 
 
 /* start upper-bar */
-
 .upper-bar .person{
     display: flex;
     justify-content: flex-end;
@@ -176,12 +171,12 @@ hr{
 }
 
 .contact h6.after::after{
- margin: 10px 0px 25px;
- display: block;
- content: '';
- width: 30px;
- height: 2px;
- background-color: #E2404C;
+  margin: 10px 0px 25px;
+  display: block;
+  content: '';
+  width: 30px;
+  height: 2px;
+  background-color: #E2404C;
 }
 
 .contact .required{
@@ -220,17 +215,15 @@ hr{
     margin-top: 18px;
 }
 
-.contact form .attachment .content{
-   
-    background-color: #F5F5F5;
-    border-radius: 3px;
-    padding: 8px 5px 8px 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 55px
+.contact form .attachment .content{ 
+   background-color: #F5F5F5;
+   border-radius: 3px;
+   padding: 8px 5px 8px 25px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 55px
 }
-
 
 .contact form .attachment .content div{
     color: #A2A2A2;
@@ -273,7 +266,6 @@ hr{
     box-shadow: none;
 }
 
-
 .contact button{
     background-color:#E2404C ;
     border-radius:3px ;
@@ -286,7 +278,6 @@ hr{
     transition: all 0.5s;
     width: 100px;
 }
-
 
 .contact button span{
     color: white;
@@ -401,7 +392,6 @@ hr{
 .ourwork a{
     color: #2C2C2C;
     font-size: 14px;
-
 }
 
 /* end section our work */
